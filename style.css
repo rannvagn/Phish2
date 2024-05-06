@@ -1,0 +1,218 @@
+@font-face {
+  font-family: "Toucon";
+  src: url(Toucon__.ttf);
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  position: relative;
+  scroll-behavior: smooth;
+  background-color: #ecfafe;
+  color: #242424;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #15c6c9;
+}
+a:hover {
+  color: #0a5f61;
+}
+
+.pop-up {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  text-align: center;
+  background-color: #f8fcfd;
+  box-shadow: 0 4px 8px rgb(21, 198, 201);
+}
+.pop-up h2 {
+  color: #6d7475;
+}
+.pop-up img {
+  width: 10rem;
+}
+
+.sorting-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
+  justify-content: center;
+}
+.sorting-icons .fa-fish {
+  color: #FF887A;
+}
+.sorting-icons .fa-envelope {
+  color: #15c6c9;
+}
+
+.btn {
+  background-color: #15c6c9;
+  padding: 1rem 1.5rem;
+  margin: 2rem auto;
+  margin-bottom: 0;
+  border-radius: 1rem;
+  color: #ecfafe;
+  transition: ease 0.5s;
+  font-weight: 600;
+  display: flex;
+  flex-wrap: wrap;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-align: center;
+  cursor: url("img/magnifyingglass.cur") pointer;
+}
+.btn:hover {
+  background-color: #0a5f61;
+  color: #ecfafe;
+}
+.btn:active {
+  color: #FF887A;
+}
+
+main {
+  margin: 4rem;
+}
+main h1 {
+  text-align: center;
+  padding-bottom: 2rem;
+  font-family: "Toucon";
+  color: #0a5f61;
+  font-size: 6rem;
+}
+main p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin-left: 6rem;
+  margin-right: 6rem;
+  padding-bottom: 1rem;
+}
+main p .orange {
+  color: #FF887A;
+  font-weight: 800;
+}
+main p .blue {
+  color: #15c6c9;
+  font-weight: 800;
+}
+main p .center {
+  text-align: center;
+}
+main .laptop-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  cursor: url("img/magnifyingglass.cur") pointer;
+}
+main .round {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+}
+main .round .mail {
+  margin: 0 2rem;
+}
+main .pop-up-1 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+main .pop-up-2 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+main .pop-up-3 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+main .pop-up-4 {
+  display: none;
+  width: 100%;
+  height: 100%;
+}
+main .read-mail {
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: -moz-fit-content;
+  width: fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: #f8fcfd;
+  box-shadow: 0 4px 8px rgb(70, 73, 73);
+}
+main .read-mail div {
+  padding-bottom: 0.5rem;
+}
+main .read-mail div p {
+  font-size: 1rem;
+}
+main .read-mail .sorting-icons {
+  text-align: center;
+}
+main .read-mail .sorting-icons .sort-phish {
+  color: #FF887A;
+}
+main .read-mail .sorting-icons .sort-phish:hover {
+  color: #9d544b;
+}
+main .read-mail .sorting-icons .sort-safe {
+  color: #15c6c9;
+}
+main .read-mail .sorting-icons .sort-safe:hover {
+  color: #0a5f61;
+}
+main .booking {
+  padding-top: 1rem;
+  padding-bottom: 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+main .booking li {
+  text-align: left;
+}
+
+@media only screen and (max-width: 767px) {
+  main h1 {
+    font-size: 3rem;
+    text-align: center;
+  }
+  main p {
+    font-size: 1rem;
+    margin: 0;
+  }
+  .pop-up {
+    margin-top: 3rem;
+  }
+  .pop-up h2 {
+    font-size: 1.5rem;
+  }
+  .pop-up img {
+    width: 6rem;
+  }
+  .round {
+    flex-direction: column;
+    gap: 3rem;
+  }
+}/*# sourceMappingURL=style.css.map */

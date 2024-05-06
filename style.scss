@@ -1,0 +1,271 @@
+// Variables
+$blue: #15c6c9;
+$darkblue: #0a5f61;
+$orange: #FF887A;
+$darkorange: #9d544b;
+$lightblue: #ecfafe;
+$white: #f8fcfd;
+$black: #242424;
+$grey: #6d7475;
+
+// Mixins
+@mixin transition($properties...) {
+    transition: $properties 0.5s ease-in-out;
+}
+
+// font
+@font-face {
+    font-family: 'Toucon';
+    src: url(Toucon__.ttf);
+}
+
+
+// STYLING
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    position: relative;
+    scroll-behavior: smooth;
+    background-color: $lightblue;
+    color: $black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: $blue;
+
+    &:hover {
+        color: $darkblue;
+    }
+}
+
+.pop-up {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    background-color: $white;
+    box-shadow: 0 4px 8px rgba(21, 198, 201, 1);
+      
+        h2 {
+            color: $grey;
+        }
+
+        img {
+            width: 10rem;
+        }
+}
+
+.sorting-icons {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding: 2rem;
+    justify-content: center;
+
+        .fa-fish {
+            color: $orange;
+        }
+
+        .fa-envelope {
+            color: $blue;
+        }
+}
+
+.btn {
+    background-color: $blue;
+    padding: 1rem 1.5rem;
+    margin: 2rem auto;
+    margin-bottom: 0;
+    border-radius: 1rem;
+    color: $lightblue;
+    transition: ease .5s;
+    font-weight: 600;
+    display: flex;
+    flex-wrap: wrap;
+    width: fit-content;
+    text-align: center;
+    cursor: url('img/magnifyingglass.cur') pointer;
+
+    &:hover {
+        background-color: $darkblue;
+        color: $lightblue;
+    }
+
+    &:active {
+        color: $orange;
+    }
+}
+
+main {
+    margin: 4rem;
+
+    h1 {
+        text-align: center;
+        padding-bottom: 2rem;
+        font-family: 'Toucon';
+        color: $darkblue;
+        font-size: 6rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-left: 6rem;
+        margin-right: 6rem;
+        padding-bottom: 1rem;
+
+        .orange {
+            color: $orange;
+            font-weight: 800;
+        }
+
+        .blue {
+            color: $blue;
+            font-weight: 800;
+        }
+
+        .center {
+            text-align: center;
+        }
+    }
+
+    .laptop-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+        cursor: url('img/magnifyingglass.cur') pointer;
+    }
+
+    .round {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2rem;
+
+        .mail {
+            margin: 0 2rem;
+        }
+    }
+
+    .pop-up-1 {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pop-up-2 {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pop-up-3 {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .pop-up-4 {
+        display: none;
+        width: 100%;
+        height: 100%;
+    }
+
+    .read-mail {
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: fit-content;
+        height: fit-content;
+        margin-top: 2rem;
+        margin-bottom: 2rem;
+        padding: 2rem;
+        border-radius: 1rem;
+        background-color: $white;
+        box-shadow: 0 4px 8px rgb(70, 73, 73);
+
+            div {
+                padding-bottom: .5rem;
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+
+            .sorting-icons {
+                text-align: center;
+
+                .sort-phish {
+                    color: $orange;
+
+                    &:hover {
+                        color: $darkorange;
+                    }
+                }
+
+                .sort-safe {
+                    color: $blue;
+
+                    &:hover {
+                        color: $darkblue;
+                    }
+                }
+            }
+        }
+
+        .booking {
+            padding-top: 1rem;
+            padding-bottom: 2rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            li {
+                text-align: left;
+            }
+        }
+    }
+
+
+    @media only screen and (max-width: 767px) {
+        main {
+            h1 {
+                font-size: 3rem;
+                text-align: center;
+            }
+
+            p {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+
+        .pop-up {
+            margin-top: 3rem;
+
+            h2 {
+                font-size: 1.5rem;
+            }
+    
+            img {
+                width: 6rem;
+            }
+        }
+
+        .round {
+            flex-direction: column;
+            gap: 3rem;
+        }
+    }
