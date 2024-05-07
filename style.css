@@ -243,4 +243,9 @@ main .booking li {
   main .pop-up-4 {
     margin-top: 6rem;
   }
+  .congratulations-main p {
+    font-size: 1rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+  }
 }/*# sourceMappingURL=style.css.map */
