@@ -137,13 +137,13 @@ document.addEventListener("DOMContentLoaded", function() {
     // Add click function to sorting buttons for mail-2
     var safeButton2 = document.querySelector('.pop-up-2 .sort-safe');
         safeButton2.addEventListener('click', function(event) {
-            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
+            event.stopPropagation(); // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong2();
     });
 
     var phishButton2 = document.querySelector('.pop-up-2 .sort-phish');
         phishButton2.addEventListener('click', function(event) {
-            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
+            event.stopPropagation(); // prevents pop-up from staying/appearing when sorting buttons are clicked
     });
 
     // Get mail-3
