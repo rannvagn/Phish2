@@ -51,6 +51,7 @@ document.addEventListener("DOMContentLoaded", function() {
     // Function to replace divs (rounds)
     function replaceDiv() {
         // Hide the laptop when clicked
+        document.querySelector('.instructions').style.display = 'none';
         document.querySelector('.laptop-container').style.display = 'none';
             // Show round-1 when laptop is clicked
             document.querySelector('.round-1').style.display = 'block';

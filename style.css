@@ -42,6 +42,9 @@ a:hover {
 .pop-up img {
   width: 10rem;
 }
+.pop-up .ready {
+  margin-top: 1rem;
+}
 
 .sorting-icons {
   display: flex;
