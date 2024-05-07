@@ -144,6 +144,7 @@ document.addEventListener("DOMContentLoaded", function() {
     var phishButton2 = document.querySelector('.pop-up-2 .sort-phish');
         phishButton2.addEventListener('click', function(event) {
             event.stopPropagation(); // prevents pop-up from staying/appearing when sorting buttons are clicked
+            hidePopUpAndCorrect2();
     });
 
     // Get mail-3
