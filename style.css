@@ -125,9 +125,6 @@ main .round {
 main .round .mail {
   margin: 0 2rem;
 }
-main .finish-btn {
-  display: none;
-}
 main .pop-up-1 {
   display: none;
   width: 100%;
