@@ -92,45 +92,147 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click event listeners to sorting buttons
     var safeButton = document.querySelector('.sort-safe');
-        safeButton.addEventListener('click', hidePopUpAndCorrect);
+        safeButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndCorrect();
+    });
 
     var phishButton = document.querySelector('.sort-phish');
-        phishButton.addEventListener('click', hidePopUpAndWrong);        
+        phishButton.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndWrong();
+    });
 
-  
-        // mail-2
-        var mail2 = document.querySelector('.mail-2');
+    // Get mail-2
+    var mail2 = document.querySelector('.mail-2');
+        // Get pop-up-2
         var popUp2 = document.querySelector('.pop-up-2');
+            // Initially hide pop-up-2
             popUp2.style.display = 'none';
-                mail2.addEventListener('click', function() {
-                    popUp2.style.display = 'block';
-        });
 
-        // mail-3
-        var mail3 = document.querySelector('.mail-3');
+    // Function to hide pop-up-2 and change image to correct
+    function hidePopUpAndCorrect2() {
+        // Hide pop-up-2
+        popUp2.style.display = 'none';
+            // Change image source of mail-2
+            var mailImage = mail2.querySelector('img');
+                mailImage.src = 'img/correct.png';
+    }
+
+    // Function to hide pop-up-2 and change image to wrong
+    function hidePopUpAndWrong2() {
+        // Hide pop-up-2
+        popUp2.style.display = 'none';
+            // Change image source of mail-2
+            var mailImage = mail2.querySelector('img');
+                mailImage.src = 'img/wrong.png';
+    }
+
+    // Add click function to mail-2
+    mail2.addEventListener('click', function() {
+        // Show the pop-up-2 element when mail-2 is clicked
+        popUp2.style.display = 'block';
+    });
+
+    // Add click event listeners to sorting buttons for mail-2
+    var safeButton2 = document.querySelector('.pop-up-2 .sort-safe');
+        safeButton2.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndWrong2();
+    });
+
+    var phishButton2 = document.querySelector('.pop-up-2 .sort-phish');
+        phishButton2.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndCorrect2();
+    });
+
+    // Get mail-3
+    var mail3 = document.querySelector('.mail-3');
+        // Get pop-up-3
         var popUp3 = document.querySelector('.pop-up-3');
+            // Initially hide pop-up-3
             popUp3.style.display = 'none';
-                mail3.addEventListener('click', function() {
-                    popUp3.style.display = 'block';
-        });
 
-        // mail-4
-            var mail4 = document.querySelector('.mail-4');
-            var popUp4 = document.querySelector('.pop-up-4');
-                popUp4.style.display = 'none';
-                    mail4.addEventListener('click', function() {
-                        popUp4.style.display = 'block';
-        });
+    // Function to hide pop-up-3 and change image to correct
+    function hidePopUpAndCorrect3() {
+        // Hide pop-up-3
+        popUp3.style.display = 'none';
+            // Change image source of mail-3
+            var mailImage = mail3.querySelector('img');
+                mailImage.src = 'img/correct.png';
+    }
 
+    // Function to hide pop-up-3 and change image to wrong
+    function hidePopUpAndWrong3() {
+        // Hide pop-up-3
+        popUp3.style.display = 'none';
+            // Change image source of mail-3
+            var mailImage = mail3.querySelector('img');
+                mailImage.src = 'img/wrong.png';
+    }
 
+    // Add click function to mail-3
+    mail3.addEventListener('click', function() {
+        // Show the pop-up-3 element when mail-3 is clicked
+        popUp3.style.display = 'block';
+    });
 
+    // Add click event listeners to sorting buttons
+    var safeButton3 = document.querySelector('.pop-up-3 .sort-safe');
+        safeButton3.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndWrong3();
+    });
 
+    var phishButton3 = document.querySelector('.pop-up-3 .sort-phish');
+        phishButton3.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndCorrect3();
+    });
 
-// Initially hide the continue button (to advance rounds)
-var continueButton = document.querySelector('.continue-btn');
-continueButton.style.display = 'none';
+    // Get mail-4
+    var mail4 = document.querySelector('.mail-4');
+        // Get pop-up-4
+        var popUp4 = document.querySelector('.pop-up-4');
+            // Initially hide pop-up-4
+            popUp4.style.display = 'none';
 
-    // Append the continue button below the mail divs
-    var round1 = document.querySelector('.round-1');
-    round1.appendChild(continueButton);
+    // Function to hide pop-up-4 and change image to correct
+    function hidePopUpAndCorrect4() {
+        // Hide pop-up-4
+        popUp4.style.display = 'none';
+            // Change image source of mail-4
+            var mailImage = mail4.querySelector('img');
+                mailImage.src = 'img/correct.png';
+    }
+
+    // Function to hide pop-up-4 and change image to wrong
+    function hidePopUpAndWrong4() {
+        // Hide pop-up-4
+        popUp4.style.display = 'none';
+            // Change image source of mail-4
+            var mailImage = mail4.querySelector('img');
+                mailImage.src = 'img/wrong.png';
+    }
+
+    // Add click function to mail-4
+    mail4.addEventListener('click', function() {
+        // Show the pop-up-4 element when mail-4 is clicked
+        popUp4.style.display = 'block';
+    });
+
+    // Add click event listeners to sorting buttons
+    var safeButton4 = document.querySelector('.pop-up-4 .sort-safe');
+        safeButton4.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndCorrect4();
+    });
+
+    var phishButton4 = document.querySelector('.pop-up-4 .sort-phish');
+        phishButton4.addEventListener('click', function(event) {
+            event.stopPropagation(); // Prevent event from propagating to parent elements
+            hidePopUpAndWrong4();
+    });
+
 });
