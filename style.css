@@ -83,7 +83,6 @@ a:hover {
   width: -moz-fit-content;
   width: fit-content;
   text-align: center;
-  cursor: url("img/magnifyingglass.cur") pointer;
 }
 .btn:hover {
   background-color: #0a5f61;
@@ -126,7 +125,6 @@ main .laptop-container {
   justify-content: center;
   align-items: center;
   padding: 2rem;
-  cursor: url("img/magnifyingglass.cur") pointer;
 }
 main .round {
   display: flex;

@@ -19,7 +19,6 @@ $grey: #6d7475;
     src: url(Toucon__.ttf);
 }
 
-
 // STYLING
 * {
     box-sizing: border-box;
@@ -108,7 +107,6 @@ a {
     flex-wrap: wrap;
     width: fit-content;
     text-align: center;
-    cursor: url('img/magnifyingglass.cur') pointer;
 
     &:hover {
         background-color: $darkblue;
@@ -158,7 +156,6 @@ main {
         justify-content: center;
         align-items: center;
         padding: 2rem;
-        cursor: url('img/magnifyingglass.cur') pointer;
     }
 
     .round {
