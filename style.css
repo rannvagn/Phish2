@@ -23,6 +23,15 @@ a:hover {
   color: #0a5f61;
 }
 
+.fakelink {
+  text-decoration: none;
+  color: #15c6c9;
+}
+.fakelink:hover {
+  color: #0a5f61;
+  cursor: pointer;
+}
+
 .pop-up {
   position: absolute;
   top: 50%;

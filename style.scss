@@ -43,6 +43,16 @@ a {
     }
 }
 
+.fakelink {
+    text-decoration: none;
+    color: $blue;
+
+    &:hover {
+        color: $darkblue;
+        cursor: pointer;
+    }
+}
+
 .pop-up {
     position: absolute;
     top: 50%;
