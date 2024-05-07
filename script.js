@@ -86,20 +86,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click function to mail-1
     mail1.addEventListener('click', function() {
-        // Show the pop-up-1 element when mail-1 is clicked
+        // Show pop-up-1 when mail-1 is clicked
         popUp1.style.display = 'block';
     });
 
-    // Add click event listeners to sorting buttons
+    // Add click function to sorting buttons for mail-1
     var safeButton = document.querySelector('.sort-safe');
         safeButton.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndCorrect();
     });
 
     var phishButton = document.querySelector('.sort-phish');
         phishButton.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong();
     });
 
@@ -130,21 +130,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click function to mail-2
     mail2.addEventListener('click', function() {
-        // Show the pop-up-2 element when mail-2 is clicked
+        // Show pop-up-2 when mail-2 is clicked
         popUp2.style.display = 'block';
     });
 
-    // Add click event listeners to sorting buttons for mail-2
+    // Add click function to sorting buttons for mail-2
     var safeButton2 = document.querySelector('.pop-up-2 .sort-safe');
         safeButton2.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong2();
     });
 
     var phishButton2 = document.querySelector('.pop-up-2 .sort-phish');
         phishButton2.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
-            hidePopUpAndCorrect2();
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
     });
 
     // Get mail-3
@@ -174,20 +173,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click function to mail-3
     mail3.addEventListener('click', function() {
-        // Show the pop-up-3 element when mail-3 is clicked
+        // Show pop-up-3 when mail-3 is clicked
         popUp3.style.display = 'block';
     });
 
-    // Add click event listeners to sorting buttons
+    // Add click function to sorting buttons for mail-3
     var safeButton3 = document.querySelector('.pop-up-3 .sort-safe');
         safeButton3.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong3();
     });
 
     var phishButton3 = document.querySelector('.pop-up-3 .sort-phish');
         phishButton3.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndCorrect3();
     });
 
@@ -218,20 +217,20 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Add click function to mail-4
     mail4.addEventListener('click', function() {
-        // Show the pop-up-4 element when mail-4 is clicked
+        // Show pop-up-4 when mail-4 is clicked
         popUp4.style.display = 'block';
     });
 
-    // Add click event listeners to sorting buttons
+    // Add click function to sorting buttons for mail-4
     var safeButton4 = document.querySelector('.pop-up-4 .sort-safe');
         safeButton4.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndCorrect4();
     });
 
     var phishButton4 = document.querySelector('.pop-up-4 .sort-phish');
         phishButton4.addEventListener('click', function(event) {
-            event.stopPropagation(); // Prevent event from propagating to parent elements
+            event.stopPropagation(); // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong4();
     });
 
