@@ -1,5 +1,8 @@
 document.addEventListener("DOMContentLoaded", function() {
-    
+
+// count correct sortings
+var correctSelections = 0;
+
     /* --- INITIAL POP UP --- */
 
     // pop-up when opening website
@@ -44,9 +47,11 @@ document.addEventListener("DOMContentLoaded", function() {
 
     // Get the round elements
     var round1 = document.querySelector('.round-1');
+    var mailInstructions = document.querySelector('.mail-instructions');
         
     // Initially hide the round elements
     round1.style.display = 'none';
+    mailInstructions.style.display = 'none';
 
     // Function to replace divs (rounds)
     function replaceDiv() {
@@ -55,6 +60,7 @@ document.addEventListener("DOMContentLoaded", function() {
         document.querySelector('.laptop-container').style.display = 'none';
             // Show round-1 when laptop is clicked
             document.querySelector('.round-1').style.display = 'block';
+            document.querySelector('.mail-instructions').style.display = 'block';
     }
 
 
@@ -74,6 +80,9 @@ document.addEventListener("DOMContentLoaded", function() {
             // Change image source of mail-1
             var mailImage = mail1.querySelector('img');
                 mailImage.src = 'img/correct.png';
+                correctSelections++;
+                // Check if all mails are correctly sorted
+                checkFinish();
     }
 
     // Function to hide pop-up-1 and change image to wrong
@@ -118,6 +127,9 @@ document.addEventListener("DOMContentLoaded", function() {
             // Change image source of mail-2
             var mailImage = mail2.querySelector('img');
                 mailImage.src = 'img/correct.png';
+                correctSelections++;
+                // Check if all mails are correctly sorted
+                checkFinish();
     }
 
     // Function to hide pop-up-2 and change image to wrong
@@ -162,6 +174,9 @@ document.addEventListener("DOMContentLoaded", function() {
             // Change image source of mail-3
             var mailImage = mail3.querySelector('img');
                 mailImage.src = 'img/correct.png';
+                correctSelections++;
+                // Check if all mails are correctly sorted
+                checkFinish();
     }
 
     // Function to hide pop-up-3 and change image to wrong
@@ -206,6 +221,9 @@ document.addEventListener("DOMContentLoaded", function() {
             // Change image source of mail-4
             var mailImage = mail4.querySelector('img');
                 mailImage.src = 'img/correct.png';
+                correctSelections++;
+                // Check if all mails are correctly sorted
+                checkFinish();
     }
 
     // Function to hide pop-up-4 and change image to wrong
@@ -235,5 +253,14 @@ document.addEventListener("DOMContentLoaded", function() {
             event.stopPropagation(); // prevents pop-up from staying/appearing when sorting buttons are clicked
             hidePopUpAndWrong4();
     });
+
+    // Function to check if all mails are correctly sorted
+    function checkFinish() {
+        if (correctSelections === 4) {
+            // if all mails are correctly sorted, display finish button
+            var finishBtn = document.querySelector('.finish-btn');
+            finishBtn.style.display = 'block';
+        }
+    }
 
 });
